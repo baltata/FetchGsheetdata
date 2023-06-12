@@ -25,7 +25,7 @@ function init() {
                     tr.appendChild(th);
                 }
             })
-            output.appendChild(tr);
+         //   output.appendChild(tr);
             //extract row data:
             jsonData.table.rows.forEach((rowData) => {
                 const row = {};
@@ -97,7 +97,7 @@ function processRows(json) {
           td.textContent = row[key];
             tr.appendChild(td);
         })
-        output.appendChild(tr);
+      //  output.appendChild(tr);
     })
 }
 
