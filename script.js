@@ -81,7 +81,7 @@ function checkStatus (id) {
  // check the status of each exercice to see whether it is paying or not
  for (let i = 0; i < data.length; i++) {
     if (data[i].id==id) {        
-          retour = data[i].Payant
+         var retour = data[i].Payant
         }
       }
       return retour;
