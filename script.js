@@ -56,8 +56,10 @@ function init() {
 }
 function injectHTML (liste) {
 for (var i = 0, len = liste.length; i < len; i++) {
+    var isThePageBeingEdited=document.querySelector("body").id;
+    if (isThePageBeingEdited!="page-mod-book-edit"){
     liste[i].insertAdjacentHTML('beforeend','<div class="blur"> <div class="gosabonner">Cet exercice est réservé à nos utilisateurs premium &#128081. <br><a class="awhite" href="galilee.ac"> <div class="whitebutton"><b> Nos offres</b></div></a> </div>')
-}
+}}
 }
 
 
